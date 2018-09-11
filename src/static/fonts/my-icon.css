@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'my-icon';
+  src:
+    url('./my-icon.ttf?mmk4br') format('truetype'),
+    url('./my-icon.woff?mmk4br') format('woff'),
+    url('./my-icon.svg?mmk4br#my-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
