@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const SearchWrapper = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const SearchWrapper = styled.div`
     border-left: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
   }
-`;
+`
 
 export const SearchInput = styled.input`
   flex: 1;
@@ -33,7 +33,7 @@ export const SearchInput = styled.input`
   ::-webkit-input-placeholder {
     font-size: 16px;
   }
-`;
+`
 
 export const SearchButton = styled.button`
   width: 55px;
@@ -44,7 +44,7 @@ export const SearchButton = styled.button`
   outline: none;
   cursor: pointer;
   border: none;
-`;
+`
 
 export const SearchList = styled.div`
   display: flex;
@@ -52,11 +52,11 @@ export const SearchList = styled.div`
   width: 100%;
   margin-bottom: 65px;
   padding: 0 10px;
-`;
+`
 
 export const SearchMore = styled.div`
   display: none;
-  margin-bottom: 10px;
+  margin: 10px 0;
   text-align: center;
   border-radius: 10px;
   background: #ccc;
@@ -68,15 +68,15 @@ export const SearchMore = styled.div`
     50% { height: 1rem; }
     100% { height: 1.5rem; }
   }
-`;
+`
 
 export const NavBarWrapper = styled.div`
   display: flex;
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 500px;
   height: 65px;
+  font-size: 12px;
   a {
     flex: 1;
     display: flex;
@@ -105,7 +105,7 @@ export const NavBarWrapper = styled.div`
   .show {
     color: #318dff;
   }
-`;
+`
 
 export const NavItem = styled.button`
   background: #f6f6f6;
@@ -117,4 +117,12 @@ export const NavItem = styled.button`
     font-family: "my-icon";
     font-size: 24px;
   }
-`;
+`
+
+export const Tip = styled.div`
+  width: 100%;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+`

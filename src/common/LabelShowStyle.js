@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 import {
   InfoTags,
   InfoTagsAll
-} from './style';
+} from './style'
 
 export const connect = WrapperComponent => {
   const LabelShowStyle = props => (
-    <WrapperComponent infoTags={tagsAllShow} {...props}/>
+    <WrapperComponent infoTags={tagsAllShow} {...props} />
   )
-  return LabelShowStyle;
+  return LabelShowStyle
 }
 
-function tagsAllShow(show, content) {
+function tagsAllShow (show, content) {
   if (show) {
     return (
       <InfoTagsAll>
@@ -19,7 +19,7 @@ function tagsAllShow(show, content) {
           <span className='info-tag' key={index}>{item.name || item }</span>
         ))}
       </InfoTagsAll>
-    );
+    )
   } else {
     return (
       <InfoTags>
@@ -27,6 +27,6 @@ function tagsAllShow(show, content) {
           <span className='info-tag' key={index}>{item.name || item}</span>
         ))}
       </InfoTags>
-    );
+    )
   }
 };

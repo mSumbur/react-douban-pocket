@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const DetailPage = styled.div`
   position: fixed;
@@ -11,20 +11,7 @@ export const DetailPage = styled.div`
   background: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
-`;
-
-// .content-page {
-//   position: fixed;
-//   top: 0;
-//   z-index: 1;
-//   width: 100%;
-//   max-width: 500px;
-//   height: 100%;
-//   margin: 0 auto;
-//   background: #fff;
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-// }
+`
 
 export const PageHeader = styled.div`
   width: 100%;
@@ -39,26 +26,31 @@ export const PageHeader = styled.div`
     left: 5px;
     color: #fff;
   }
-`;
+`
 
 export const PageContent = styled.div`
   width: 100%;
   padding: 0 10px;
-`;
-// .content-page .page-title {
-//   width: 100%;
-//   height: 50px;
-//   line-height: 50px;
-//   text-align: center;
-//   font-weight: bold;
-//   color: #fff;
-//   background: #318dff;
-// }
-// .content-page .close-page {
-//   position: absolute; 
-//   left: 0;
-//   padding-left: 5px;
-// }
+  .movie-pic {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  .casts {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: scroll;
+  }
+  .cast {
+    width: 100px;
+    margin-right: 20px;
+    img {
+      width: 100%;
+    }
+  }
+`
 // .content-page .page-card {
 //   padding: 10px 10px 0;
 // }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { 
+import {
   SearchWrapper,
   SearchInput,
   SearchButton
@@ -27,45 +27,40 @@ class SearchBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
-    
+
   setPlaceholder() {
-    let text = null;
-    switch(this.props.type) {
+    switch (this.props.type) {
       case 'book':
-       text = '书名、作者、ISBN'
-        break;
+        return '书名、作者、ISBN'
       case 'movie':
-       text = '电影、影人、影院、电视剧'
-        break;
+        return '电影、影人、影院、电视剧'
       case 'music':
-        text = '唱片名、表演者、条码、ISRC'
-        break;
-      default: 
-        return this.state.inputValue;
-      }
-    return text;
+        return '唱片名、表演者、条码、ISRC'
+      default:
+        return this.state.inputValue
+    }
   }
-    
+
   handleInputChange(e) {
     this.setState({
       inputValue: e.target.value
     })
   }
 
-  handleClick() {    
-    if(this.state.inputValue) {
+  handleClick() {
+    if (this.state.inputValue) {
       this.placeholderText = this.state.inputValue;
       this.props.handleSearch(this.state.inputValue);
       this.setState({
         inputValue: ''
       })
-    } 
+    }
   }
 
-  render () {
+  render() {
     return (
-      <SearchWrapper>    
-        <SearchInput placeholder={this.placeholderText ? this.placeholderText : this.setPlaceholder()} value={this.state.inputValue} onChange={this.handleInputChange}/>
+      <SearchWrapper>
+        <SearchInput placeholder={this.placeholderText ? this.placeholderText : this.setPlaceholder()} value={this.state.inputValue} onChange={this.handleInputChange} />
         <SearchButton onClick={this.handleClick}>搜索</SearchButton>
       </SearchWrapper>
     )

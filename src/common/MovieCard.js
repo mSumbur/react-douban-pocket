@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 import {
   CardWrapper,
   CardPic,
   CardInfo,
   InfoItem
-} from './style';
-import { connect } from './LabelShowStyle';
+} from './style'
+import { connect } from './LabelShowStyle'
 
 let MovieCard = props => {
-  const { content, tagsAllShow, infoTags } = props;
+  const { content, tagsAllShow, infoTags } = props
   return (
     <CardWrapper>
       <CardPic>
-        <img src={content.images ? content.images.medium : content.image} alt='电影海报'/>
+        <img src={content.images ? content.images.medium : content.image} alt='电影海报' />
       </CardPic>
       <CardInfo>
         <InfoItem className='movie-title'>{content.title}</InfoItem>
         {infoTags(tagsAllShow, content.genres)}
         <InfoItem className='movie-casts'>
           {
-            content.casts.map( (item, index) => {
+            content.casts.map((item, index) => {
               if (index) {
                 return '/' + item.name
               }
@@ -34,5 +34,5 @@ let MovieCard = props => {
   )
 }
 
-MovieCard = connect(MovieCard);
-export default MovieCard;
+MovieCard = connect(MovieCard)
+export default MovieCard

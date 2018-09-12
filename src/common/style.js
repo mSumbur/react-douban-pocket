@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const CardWrapper = styled.div`
   display: flex;
@@ -7,15 +7,16 @@ export const CardWrapper = styled.div`
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 2px #ccc;
-`;
+`
 
 export const CardPic = styled.div`
   width: 100px;
   margin: 5px 0px 0px 5px;
+  verticle-align: center; 
   img {
     width: 100%;
   }
-`;
+`
 
 export const CardInfo = styled.ul`
   display: flex;
@@ -43,7 +44,7 @@ export const CardInfo = styled.ul`
     color: #fff;
     background-color: #f3b500;
   }
-`;
+`
 
 export const InfoItem = styled.li`
   flex: 1;
@@ -59,15 +60,15 @@ export const InfoItem = styled.li`
     font-size: 0.9rem;
     color: #919191;
   }
-`;
+`
 
 export const InfoTags = styled(InfoItem)`
   overflow-x: scroll;
   text-overflow: clip;
-`;
+`
 
 export const InfoTagsAll = styled.li`
   flex: 1;
   width: 100%;
   white-space: wrap;
-`;
+`
